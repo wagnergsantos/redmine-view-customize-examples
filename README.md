@@ -1,87 +1,88 @@
-# View customizeプラグインによるRedmineカスタマイズ集
+# Coleção de Customizações do Redmine Usando o Plugin View Customize
 
-View customizeプラグインは、Redmineの画面を手軽にカスタマイズできるプラグインです。特定の画面にCSSとJavaScriptを追加できます。
-本資料はView customizeプラグインを活用したRedmineのカスタマイズ事例と設定内容を紹介しています。
+O plugin View Customize permite customizar facilmente as telas do Redmine. Você pode adicionar CSS e JavaScript a telas específicas.
+Este documento apresenta exemplos de customização do Redmine e configurações usando o plugin View Customize.
 
-* View customizeプラグインのダウンロード: https://github.com/onozaty/redmine-view-customize
-* View customizeプラグイン 紹介資料: https://www.slideshare.net/onozaty/view-customize-plugin-for-redmine-2019
+* Download do plugin View Customize: [https://github.com/onozaty/redmine-view-customize](https://github.com/onozaty/redmine-view-customize)
+* Material de apresentação do plugin View Customize: [https://www.slideshare.net/onozaty/view-customize-plugin-for-redmine-2019](https://www.slideshare.net/onozaty/view-customize-plugin-for-redmine-2019)
 
-※ 紹介している設定は無保証です。また、Redmineのバージョンやブラウザなど利用環境によっては期待通りに動作しない場合があります。ご自身の責任において利用してください。
+※ As configurações apresentadas não possuem garantia. Além disso, dependendo do ambiente de uso, como a versão do Redmine e o navegador, pode não funcionar como esperado. Use por sua conta e risco.
 
-## カスタマイズ事例集
+## Coleção de Exemplos de Customização
 
-### 「プロジェクト」画面
+### Tela "Projeto"
 
-* [プロジェクト画面の段組みを解除して1段で表示する](customizes/f6b5901b/customize.md)
-* [「プロジェクト」画面から「ガントチャート」「カレンダー」などのメニューを非表示にする](customizes/de33ffd8/customize.md)
-* [カスタムクエリが反映されたプロジェクト一覧画面を表示する](customizes/8fbd742a/customize.md)
-* [プロジェクト一覧画面でプロジェクト名をクリックした際に、チケット一覧画面をデフォルトで表示する](customizes/13c2b2e2/customize.md)
+* [Remover a estrutura em colunas da tela "Projeto" e exibir em uma única coluna](customizes/f6b5901b/customize.md)
+* [Ocultar os menus "Gráfico de Gantt", "Calendário", etc. da tela "Projeto"](customizes/de33ffd8/customize.md)
+* [Exibir a tela da lista de projetos com a consulta personalizada refletida](customizes/8fbd742a/customize.md)
+* [Exibir a tela da lista de tickets por padrão ao clicar no nome do projeto na tela da lista de projetos](customizes/13c2b2e2/customize.md)
 
-### 「プロジェクト」の概要画面
+### Tela de Visão Geral do "Projeto"
 
-* [プロジェクトの概要画面でメンバーを非表示にする](customizes/b36e52d2/customize.md)
+* [Ocultar os membros na tela de visão geral do projeto](customizes/b36e52d2/customize.md)
 
-### 「チケット」画面
+### Tela "Ticket"
 
-* [チケット一覧で作成者・担当者・最終更新者の名前が折り返されないようにする](customizes/5efbb0c1/customize.md)
-* [カスタムクエリが反映されたチケット一覧画面を表示する](customizes/4a3d6294/customize.md)
-* [チケット一覧で完了しているチケットの番号に取り消し線を表示する](customizes/a0dc300b/customize.md)
-* [チケット一覧で長いテキストのカスタフィールドの値を省略して表示する](customizes/14284ae1/customize.md)
-* [チケット一覧で優先度によってチケットの背景色を変更する](customizes/1f7acfab/customize.md)
-* [チケット一覧で期日が過ぎたチケットの背景色を変更する](customizes/1201d1e4/customize.md)
-
-
-### 「個人設定」画面
-
-* [「個人設定」画面内の「メール通知」を非表示にする](customizes/22dad0f4/customize.md)
-
-### チケットの作成・編集・表示画面
-
-* [システム管理者権限ユーザーでログインした際にチケット削除ボタンを非表示にする](customizes/27afbc24/customize.md)
-* [チケット作成時に作成日から指定した日数後の日付を期日へ表示する](customizes/85cfc016/customize.md)
-* [チケット作成画面の「ウォッチャー」欄でメンバーの表示を行わず必ず「ウォッチャーを検索して追加」を使用するようにする](customizes/3f0a014e/customize.md)
-* [チケット作成時に日付形式のカスタムフィールドへ現在の日付を表示する](customizes/7f0d0fa2/customize.md)
-* [カスタムフィールドの幅を変更する](customizes/25c168d1/customize.md)
-* [チケットのコメント入力欄にテンプレートを追加する](customizes/52ff2644/customize.md)
-* [チケット作成画面で題名・説明に入力例を表示する](customizes/01951140/customize.md)
-* [チケット作成・編集画面でトラッカーに応じて説明欄に入力例を表示する](customizes/0d25011e/customize.md)
-* [テキスト形式のカスタムフィールド欄に入力例を表示する](customizes/1b38e16b/customize.md)
-* [チケットの表示画面で「優先度」を非表示にする](customizes/0f3bccf7/customize.md)
-* [新しいチケット画面でカスタムフィールドにデフォルトで現在日時を yyyy/mm/dd hh:mm 形式で表示する](customizes/68c4adc1/customize.md)
-* [チケット表示画面で「説明」を他の項目より上に表示する](customizes/a69779da/customize.md)
-* [「担当者」ドロップダウンでグループをユーザーより前に表示する](customizes/c615d345/customize.md)
-* [チケット作成画面でチケットを作成しているユーザーを「担当者」に表示する](customizes/f8be8ed3/customize.md)
-* [チケット閲覧画面で編集を行う際にコメント欄へのフォーカスとスクロールをやめる](customizes/a0eefde8/customize.md)
-
-### ガントチャート
-
-* [ガントチャートでトラッカー名を非表示にする](customizes/0b123b84/customize.md)
-* [ガントチャートでトラッカー名・チケット番号をを非表示にする](customizes/473c1aaf/customize.md)
-
-### チケットパネル
-
-「チケットパネル（Issues Panel)」は、チケットをカード形式の一覧で表示するプラグインです。カード形式のチケットをステータスごとに見ることができます。  
-ダウンロード： [https://github.com/redmica/redmine_issues_panel](https://github.com/redmica/redmine_issues_panel)
-
-* [チケットパネルのカードの左側に表示される色を変更する](customizes/4a061412/customize.md)
-
-### 利用者へのメッセージ・お知らせ等の表示
-
-* [ログイン画面にアカウント登録を促すメッセージを表示する](customizes/fb591668/customize.md)
-* [各画面に操作ガイダンスを表示する](customizes/894e7a80/customize.md)
-* [全ページの最上部にお知らせを表示する](customizes/04026502/customize.md)
-
-### その他
-
-* [ヘッダの背景色を変更する](customizes/5be64089/customize.md)
-* [リンクを別タブで表示する(Textile)](customizes/0798899d/customize.md)
-* [「個人設定」を非表示にする](customizes/4eac4649/customize.md)
-* [サイドバーの幅を狭くする](customizes/429ae96e/customize.md)
-* [プロジェクトを横断した自分が担当者の未完了チケット一覧へのリンクを表示する](customizes/7226f2fe/customize.md)
+* [Impedir que os nomes do criador, responsável e último atualizador sejam quebrados na lista de tickets](customizes/5efbb0c1/customize.md)
+* [Exibir a tela da lista de tickets com a consulta personalizada refletida](customizes/4a3d6294/customize.md)
+* [Exibir uma linha através do número do ticket na lista de tickets para tickets concluídos](customizes/a0dc300b/customize.md)
+* [Exibir o valor do campo personalizado de texto longo abreviado na lista de tickets](customizes/14284ae1/customize.md)
+* [Alterar a cor de fundo do ticket na lista de tickets de acordo com a prioridade](customizes/1f7acfab/customize.md)
+* [Alterar a cor de fundo do ticket na lista de tickets para tickets com data de vencimento expirada](customizes/1201d1e4/customize.md)
 
 
-## ライセンス
+### Tela "Configurações Pessoais"
 
-この資料は [クリエイティブ・コモンズ 表示 - 継承 4.0 国際 ライセンス](https://creativecommons.org/licenses/by-sa/4.0/) の下に提供されています。
+* [Ocultar "Notificações por e-mail" na tela "Configurações Pessoais"](customizes/22dad0f4/customize.md)
 
-Copyright (C) [ファーエンドテクノロジー株式会社](https://www.farend.co.jp/)
+### Tela de Criação, Edição e Exibição de Tickets
+
+* [Ocultar o botão de exclusão de ticket quando um usuário com privilégios de administrador do sistema estiver logado](customizes/27afbc24/customize.md)
+* [Exibir a data especificada como data de vencimento na criação do ticket](customizes/85cfc016/customize.md)
+* [Forçar o uso de "Pesquisar e adicionar observadores" na seção "Observadores" da tela de criação de tickets, sem exibir os membros](customizes/3f0a014e/customize.md)
+* [Exibir a data atual no campo personalizado de formato de data na criação do ticket](customizes/7f0d0fa2/customize.md)
+* [Alterar a largura do campo personalizado](customizes/25c168d1/customize.md)
+* [Adicionar um modelo à área de entrada de comentários do ticket](customizes/52ff2644/customize.md)
+* [Exibir exemplos de entrada no título e na descrição na tela de criação de tickets](customizes/01951140/customize.md)
+* [Exibir exemplos de entrada na área de descrição de acordo com o rastreador na tela de criação e edição de tickets](customizes/0d25011e/customize.md)
+* [Exibir exemplos de entrada no campo personalizado de formato de texto](customizes/1b38e16b/customize.md)
+* [Ocultar "Prioridade" na tela de exibição do ticket](customizes/0f3bccf7/customize.md)
+* [Exibir a data e hora atuais no formato aaaa/mm/dd hh:mm por padrão no campo personalizado na nova tela de ticket](customizes/68c4adc1/customize.md)
+* [Exibir "Descrição" acima de outros itens na tela de exibição do ticket](customizes/a69779da/customize.md)
+* [Exibir grupos antes dos usuários no menu suspenso "Responsável"](customizes/c615d345/customize.md)
+* [Exibir o usuário que está criando o ticket como "Responsável" na tela de criação de tickets](customizes/f8be8ed3/customize.md)
+* [Parar de focar e rolar para a área de comentários ao editar na tela de visualização de tickets](customizes/a0eefde8/customize.md)
+
+
+### Gráfico de Gantt
+
+* [Ocultar o nome do rastreador no Gráfico de Gantt](customizes/0b123b84/customize.md)
+* [Ocultar o nome do rastreador e o número do ticket no Gráfico de Gantt](customizes/473c1aaf/customize.md)
+
+### Painel de Tickets
+
+"Painel de Tickets (Issues Panel)" é um plugin que exibe os tickets em uma lista no formato de cartão. Você pode ver os tickets no formato de cartão por status.  
+Download： [https://github.com/redmica/redmine_issues_panel](https://github.com/redmica/redmine_issues_panel)
+
+* [Alterar a cor exibida no lado esquerdo do cartão no Painel de Tickets](customizes/4a061412/customize.md)
+
+### Exibindo Mensagens, Avisos, etc. para o Usuário
+
+* [Exibir uma mensagem na tela de login incentivando o registro da conta](customizes/fb591668/customize.md)
+* [Exibir guia de operação em cada tela](customizes/894e7a80/customize.md)
+* [Exibir um aviso no topo de todas as páginas](customizes/04026502/customize.md)
+
+### Outros
+
+* [Alterar a cor de fundo do cabeçalho](customizes/5be64089/customize.md)
+* [Exibir links em uma nova guia (Textile)](customizes/0798899d/customize.md)
+* [Ocultar "Configurações Pessoais"](customizes/4eac4649/customize.md)
+* [Reduzir a largura da barra lateral](customizes/429ae96e/customize.md)
+* [Exibir um link para a lista de tickets não concluídos dos quais sou responsável em todos os projetos](customizes/7226f2fe/customize.md)
+
+
+## Licença
+
+Este documento está disponível sob a [Licença Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/).
+
+Copyright (C) [Far End Technology Inc.](https://www.farend.co.jp/)
